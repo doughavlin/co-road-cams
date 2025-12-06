@@ -11,9 +11,9 @@ export const cameras: Camera[] = [
     { name: 'Poncha - North', url: 'https://cocam.carsprogram.org/Cellular/285S12625CAM1GP1-N.jpg' },
     { name: 'Poncha - South', url: 'https://cocam.carsprogram.org/Cellular/285S12625CAM1GP1-S.jpg' },
     { name: 'Poncha - Road', url: 'https://cocam.carsprogram.org/Cellular/285S12625CAM1GP1-ROAD.jpg' },
-    { name: 'Beuna Vista Cam - East', url: 'https://cocam.carsprogram.org/Cellular/024E21290CAM1SWC-E.jpg' },
-    { name: 'Beuna Vista Cam - North', url: 'https://cocam.carsprogram.org/Cellular/024E21290CAM1SWC-N.jpg' },
-    { name: 'Beuna Vista Cam - South', url: 'https://cocam.carsprogram.org/Cellular/024E21290CAM1SWC-S.jpg' },
+    { name: 'BV/JV - East', url: 'https://cocam.carsprogram.org/Cellular/024E21290CAM1SWC-E.jpg' },
+    { name: 'BV/JV - North', url: 'https://cocam.carsprogram.org/Cellular/024E21290CAM1SWC-N.jpg' },
+    { name: 'BV/JV - South', url: 'https://cocam.carsprogram.org/Cellular/024E21290CAM1SWC-S.jpg' },
     { name: 'Fairplay - North', url: 'https://cocam.carsprogram.org/Cellular/285N18300CAM1SWC-N.jpg' },
     { name: 'Fairplay - South', url: 'https://cocam.carsprogram.org/Cellular/285N18300CAM1SWC-S.jpg' },
 ];
