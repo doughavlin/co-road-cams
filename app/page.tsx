@@ -1,8 +1,14 @@
 "use client";
 import { cameras } from "@/lib/cameras";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const timeStamp = Date.now();
+  const [timeStamp, setTimeStamp] = useState(0);
+
+  useEffect(() => {
+    setTimeStamp(Date.now());
+  }, []);
+
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-black p-8">
       <main className="w-full max-w-6xl mx-auto">
