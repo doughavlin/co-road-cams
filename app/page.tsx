@@ -26,6 +26,7 @@ export default function Home() {
               const url = new URL(window.location.href);
               url.searchParams.set('LSCWP_CTRL', 'before_optm');
               url.searchParams.set('nocache', timeStamp.toString());
+              console.log('Reloading page with URL:', url.toString());
               window.location.href = url.toString();
             }}
             title="Reload page and refresh camera images"
