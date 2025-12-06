@@ -10,17 +10,16 @@ export default function Home() {
           Colorado Road Cameras - Updated: {new Date(timeStamp).toLocaleString()}
         </h1>
 
-        {/* Refresh button: reloads the page so images re-request with fresh timestamp */}
-        <div className="flex items-center gap-4 mb-6">
+        {/* Floating Refresh button: fixed to top-right of viewport */}
+        <div className="fixed top-6 right-6 z-50">
           <button
             type="button"
             onClick={() => window.location.reload()}
             title="Reload page and refresh camera images"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-lg"
           >
             Refresh
           </button>
-          <span className="text-sm text-zinc-600 dark:text-zinc-400">Reload images</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -33,7 +32,7 @@ export default function Home() {
                 <img
                   src={`${camera.url}?${timeStamp}`}
                   alt={camera.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
               <div className="p-4">
