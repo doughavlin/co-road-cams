@@ -1,3 +1,4 @@
+"use client";
 import { cameras } from "@/lib/cameras";
 
 export default function Home() {
@@ -5,9 +6,23 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-black p-8">
       <main className="w-full max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-black dark:text-white mb-8">
+        <h1 className="text-2xl font-bold text-black dark:text-white mb-2">
           Colorado Road Cameras - Updated: {new Date(timeStamp).toLocaleString()}
         </h1>
+
+        {/* Refresh button: reloads the page so images re-request with fresh timestamp */}
+        <div className="flex items-center gap-4 mb-6">
+          <button
+            type="button"
+            onClick={() => window.location.reload()}
+            title="Reload page and refresh camera images"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+            Refresh
+          </button>
+          <span className="text-sm text-zinc-600 dark:text-zinc-400">Reload images</span>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cameras.map((camera) => (
             <div
